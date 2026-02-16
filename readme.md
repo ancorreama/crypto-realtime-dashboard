@@ -47,4 +47,5 @@ Este proyecto es un dashboard interactivo que muestra precios de criptomonedas e
 👩‍💻 Author
 
 Andrea Correa
+
 Data & BI Analyst | MSc in Analytics Candidate
