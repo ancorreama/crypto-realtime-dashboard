@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Hola! Esto es un comentario en HTML -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Este Título lo deben cambiar -->
+  <title>Criptomonedas en vivo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- El título que aparece en la página -->
+  <h1 id="titulo">Criptomonedas en vivo: cómo se mueve el mercado en tiempo real</h1>
+  <h2>Observa la fluctuación de precios y compara su movimiento en tiempo real</h2>
+
+
+  <select name="monedas" id="menuMonedas">
+    <option value="bitcoin" selected="selected">Bitcoin</option>
+    <option value="ethereum">Ethereum</option>
+    <option value="monero">Monero</option>
+    <option value="litecoin">Litecoin</option>
+  </select>
+
+  <div id="modulo1">
+    <p id="contexto1"></p>
+    <p id="contexto2"></p>
+    <p id="reloj"></p>
+    <p id="contador"></p>
+    <p id="fuente"></p>
+
+    <p class="nota-tiempo">
+      Estos valores se actualizan automáticamente a medida que llega nueva información.
+    </p>
+  </div>
+
+  <div id="modulo2"></div>
+
+  <p class="nota-grafica">
+    Eje horizontal: tiempo en vivo | Eje vertical: precio en USD.
+  </p>
+
+  <div id="descripcion">
+    <h3>¿Qué estás viendo?</h3>
+    <p>Este tablero muestra el precio de varias criptomonedas en tiempo real. Como el mercado cambia segundo a segundo, un número por sí solo no cuenta toda la historia. Por eso aquí observamos la forma del movimiento: cuando la línea se mueve suavemente, el precio está estable; cuando se ondula con fuerza, significa que el valor está variando más en pocos minutos</p>
+
+    <h3>¿Cómo usarlo?</h3>
+    <p>Mira la hora de la última actualización en el módulo superior y observa cómo cambia la línea en la gráfica. Puedes comparar qué moneda se mueve más rápido dentro del periodo reciente. Este tablero no es una recomendación de inversión, sino una herramienta para entender cómo se comporta el mercado en vivo.</p>
+
+    <p>En este tablero, las líneas no solo muestran precios, muestran cómo “fluctúa” el mercado.</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+  </html>
